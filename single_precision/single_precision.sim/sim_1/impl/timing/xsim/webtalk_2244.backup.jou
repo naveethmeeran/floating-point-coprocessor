@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Apr  2 14:30:08 2018
+# Process ID: 2244
+# Current directory: C:/Users/meera/single_precision/single_precision.sim/sim_1/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/meera/single_precision/single_precision.sim/sim_1/impl/timing/xsim/xsim.dir/singlemul_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/meera/single_precision/single_precision.sim/sim_1/impl/timing/xsim/webtalk.log
+# Journal file: C:/Users/meera/single_precision/single_precision.sim/sim_1/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/meera/single_precision/single_precision.sim/sim_1/impl/timing/xsim/xsim.dir/singlemul_time_impl/webtalk/xsim_webtalk.tcl -notrace

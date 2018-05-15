@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/meera/single_precision/single_precision.sim/sim_1/impl/timing/xsim/decoder_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-311] analyzing module mux32
+INFO: [VRFC 10-311] analyzing module singleaddsub
+INFO: [VRFC 10-311] analyzing module singlediv
+INFO: [VRFC 10-311] analyzing module singlemul
+INFO: [VRFC 10-311] analyzing module glbl

@@ -1,0 +1,12 @@
+0.6
+2017.4
+Jan 30 2018
+15:48:17
+C:/Users/meera/single_precision/single_precision.sim/sim_1/behav/xsim/glbl.v,1507081072,verilog,,,,glbl,,,,,,,,
+C:/Users/meera/single_precision/single_precision.srcs/sim_1/new/singleaddsub_tb.v,1522664173,verilog,,,,singleaddsub_tb,,,,,,,,
+C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/decoder.v,1525151093,verilog,,,,decoder,,,,,,,,
+C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/mux32.v,1523871416,verilog,,C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/single.v,,mux32,,,,,,,,
+C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/single.v,1522667162,verilog,,C:/Users/meera/singleprecisioncomparator/singleprecisioncomparator.srcs/sources_1/new/singlecomapre.v,,singleaddsub,,,,,,,,
+C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v,1523786416,verilog,,C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlemul.v,,singlediv,,,,,,,,
+C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlemul.v,1522558763,verilog,,C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/decoder.v,,singlemul,,,,,,,,
+C:/Users/meera/singleprecisioncomparator/singleprecisioncomparator.srcs/sources_1/new/singlecomapre.v,1520782087,verilog,,C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v,,singlecomapre,,,,,,,,

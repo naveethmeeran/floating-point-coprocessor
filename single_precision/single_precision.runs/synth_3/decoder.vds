@@ -1,0 +1,741 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Tue May  1 02:04:36 2018
+# Process ID: 14604
+# Current directory: C:/Users/meera/single_precision/single_precision.runs/synth_3
+# Command line: vivado.exe -log decoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder.tcl
+# Log file: C:/Users/meera/single_precision/single_precision.runs/synth_3/decoder.vds
+# Journal file: C:/Users/meera/single_precision/single_precision.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source decoder.tcl -notrace
+Command: synth_design -top decoder -part xc7a100tcsg324-1 -flatten_hierarchy none -keep_equivalent_registers
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 180 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 345.086 ; gain = 101.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/decoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'singleaddsub' [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/single.v:23]
+INFO: [Synth 8-256] done synthesizing module 'singleaddsub' (1#1) [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/single.v:23]
+INFO: [Synth 8-638] synthesizing module 'singlemul' [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlemul.v:23]
+INFO: [Synth 8-256] done synthesizing module 'singlemul' (2#1) [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlemul.v:23]
+INFO: [Synth 8-638] synthesizing module 'singlediv' [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:23]
+INFO: [Synth 8-256] done synthesizing module 'singlediv' (3#1) [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:23]
+INFO: [Synth 8-638] synthesizing module 'singlecomapre' [C:/Users/meera/singleprecisioncomparator/singleprecisioncomparator.srcs/sources_1/new/singlecomapre.v:23]
+INFO: [Synth 8-256] done synthesizing module 'singlecomapre' (4#1) [C:/Users/meera/singleprecisioncomparator/singleprecisioncomparator.srcs/sources_1/new/singlecomapre.v:23]
+INFO: [Synth 8-638] synthesizing module 'mux32' [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/mux32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mux32' (5#1) [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/mux32.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (6#1) [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/decoder.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 408.141 ; gain = 164.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 408.141 ; gain = 164.059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/meera/single_precision/single_precision.srcs/constrs_1/new/singlemulc.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk' matched to 'port' objects. [C:/Users/meera/single_precision/single_precision.srcs/constrs_1/new/singlemulc.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [C:/Users/meera/single_precision/single_precision.srcs/constrs_1/new/singlemulc.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.190 . Memory (MB): peak = 777.008 ; gain = 0.820
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 777.008 ; gain = 532.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 777.008 ; gain = 532.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 777.008 ; gain = 532.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/single.v:78]
+INFO: [Synth 8-5546] ROM "invalid1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:88]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:102]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:116]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:130]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:144]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:158]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:172]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:186]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:200]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:214]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:228]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:242]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:256]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:270]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:284]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:298]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:312]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:326]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:340]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:354]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:368]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:382]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:396]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:410]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:424]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:438]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:454]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:470]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:486]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlediv.v:67]
+INFO: [Synth 8-5546] ROM "addsub" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 777.008 ; gain = 532.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 29    
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   3 Input     19 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     14 Bit       Adders := 12    
+	   2 Input     14 Bit       Adders := 7     
+	   3 Input     13 Bit       Adders := 9     
+	   2 Input     12 Bit       Adders := 12    
+	   3 Input      9 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	  23 Input      5 Bit       Adders := 1     
+	  29 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	  23 Input      1 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 10    
+	               29 Bit    Registers := 1     
+	               28 Bit    Registers := 12    
+	               26 Bit    Registers := 111   
+	               25 Bit    Registers := 32    
+	               24 Bit    Registers := 50    
+	               23 Bit    Registers := 9     
+	               16 Bit    Registers := 5     
+	               14 Bit    Registers := 7     
+	               12 Bit    Registers := 12    
+	                8 Bit    Registers := 51    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 117   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     29 Bit        Muxes := 28    
+	   2 Input     26 Bit        Muxes := 29    
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 53    
+	   2 Input      8 Bit        Muxes := 2     
+	   5 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module decoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+Module singleaddsub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     24 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	  23 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	  23 Input      1 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               23 Bit    Registers := 7     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     23 Bit        Muxes := 51    
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 7     
+Module singlemul 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     19 Bit       Adders := 1     
+	   3 Input     17 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     14 Bit       Adders := 12    
+	   2 Input     14 Bit       Adders := 7     
+	   3 Input     13 Bit       Adders := 9     
+	   2 Input     12 Bit       Adders := 12    
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               40 Bit    Registers := 2     
+	               32 Bit    Registers := 9     
+	               28 Bit    Registers := 12    
+	               26 Bit    Registers := 24    
+	               24 Bit    Registers := 50    
+	               16 Bit    Registers := 5     
+	               14 Bit    Registers := 7     
+	               12 Bit    Registers := 12    
+	                8 Bit    Registers := 13    
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 63    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+Module singlediv 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 29    
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	  29 Input      5 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               29 Bit    Registers := 1     
+	               26 Bit    Registers := 87    
+	               25 Bit    Registers := 32    
+	                8 Bit    Registers := 30    
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 30    
++---Muxes : 
+	   2 Input     29 Bit        Muxes := 28    
+	   2 Input     26 Bit        Muxes := 29    
+	   2 Input     25 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module singlecomapre 
+Detailed RTL Component Info : 
++---Registers : 
+	               23 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module mux32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "invalid1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "addsub" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\Areg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z2/\mantissaa_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z2/\mantissab_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash1_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z2/\p24_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m2_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m2_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash2_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m2_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash2_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z2/\p24_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m3_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash3_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m3_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m3_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash3_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m4_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m4_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash4_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m4_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash4_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m5_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash5_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m5_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m5_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash5_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m6_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m6_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash6_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m6_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash6_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m7_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash7_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m7_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m7_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash7_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m8_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m8_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash8_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m8_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash8_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m9_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash9_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m9_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m9_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash9_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m10_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m10_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash10_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m10_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash10_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m11_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash11_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m11_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m11_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash11_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m12_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m12_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash12_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m12_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash12_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m13_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash13_reg[25] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\m13_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (z3/\m13_reg[24] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (z3/\mdash13_reg[24] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (invalid1_reg) is unused and will be removed from module singleaddsub.
+WARNING: [Synth 8-3332] Sequential element (invalid_reg) is unused and will be removed from module singleaddsub.
+WARNING: [Synth 8-3332] Sequential element (mantissab_reg_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (mantissaa_reg_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p1_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p1_reg2_reg) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg2_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg2_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21a_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg2_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg2_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg2_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg2_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg2_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[12]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[11]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[10]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[9]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[8]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[15]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[14]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[13]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[12]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[11]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[10]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[9]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[8]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[15]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[14]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[13]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[12]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[11]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[10]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[9]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[8]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg2_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p24_reg_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p24_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s51a_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s51a_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s51a_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s51a_reg_reg[3]) is unused and will be removed from module singlemul.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:57 . Memory (MB): peak = 777.008 ; gain = 532.926
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:10 . Memory (MB): peak = 777.008 ; gain = 532.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:11 . Memory (MB): peak = 798.684 ; gain = 554.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:14 . Memory (MB): peak = 805.410 ; gain = 561.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:15 . Memory (MB): peak = 805.410 ; gain = 561.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:15 . Memory (MB): peak = 805.410 ; gain = 561.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 805.410 ; gain = 561.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|singleaddsub | equal2_reg               | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singleaddsub | mantissaanew_reg[22]     | 3      | 23    | NO           | NO                 | YES               | 23     | 0       | 
+|singleaddsub | outexponent4_reg[7]      | 4      | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|singleaddsub | out_reg[31]              | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | invalid_reg11_reg        | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | zero_reg11_reg           | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | s22_reg_reg[1]           | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul    | s22_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | s23_reg2_reg[1]          | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul    | s23_reg2_reg[0]          | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | s24_reg_reg[1]           | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul    | s24_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | s26_reg_reg[1]           | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul    | s26_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | s42_reg_reg[14]          | 4      | 11    | NO           | YES                | YES               | 11     | 0       | 
+|singlemul    | s42_reg_reg[3]           | 6      | 2     | NO           | YES                | YES               | 2      | 0       | 
+|singlemul    | s42_reg_reg[1]           | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul    | s42_reg_reg[0]           | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul    | s42_reg1_reg[31]         | 4      | 13    | NO           | YES                | YES               | 13     | 0       | 
+|singlemul    | s42_reg1_reg[18]         | 5      | 4     | NO           | YES                | YES               | 4      | 0       | 
+|singlemul    | outexponent_reg11_reg[7] | 12     | 8     | NO           | YES                | YES               | 8      | 0       | 
+|singlemul    | out_reg[31]              | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg2_reg[24]            | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg3_reg[24]            | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg4_reg[24]            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg5_reg[24]            | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg6_reg[24]            | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg7_reg[24]            | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg8_reg[24]            | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg9_reg[24]            | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg10_reg[24]           | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg11_reg[24]           | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg12_reg[24]           | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg13_reg[24]           | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg14_reg[24]           | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg15_reg[24]           | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg16_reg[24]           | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | qreg17_reg[24]           | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg18_reg[24]           | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg19_reg[24]           | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg20_reg[24]           | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg21_reg[24]           | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg22_reg[24]           | 23     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg23_reg[24]           | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg24_reg[24]           | 25     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg25_reg[24]           | 25     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg25_reg[23]           | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg25_reg[22]           | 23     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg25_reg[21]           | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | qreg28_reg[24]           | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | ext2_reg[2]              | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[24]     | 3      | 4     | NO           | NO                 | YES               | 4      | 0       | 
+|singlediv    | outmantissa2_reg[20]     | 24     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[19]     | 23     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[18]     | 22     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[17]     | 21     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[16]     | 20     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[15]     | 19     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[14]     | 18     | 1     | NO           | NO                 | YES               | 0      | 1       | 
+|singlediv    | outmantissa2_reg[13]     | 17     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[12]     | 16     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[11]     | 15     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[10]     | 14     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[9]      | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[8]      | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[7]      | 11     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[6]      | 10     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[5]      | 9      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[4]      | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[3]      | 7      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[2]      | 6      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[1]      | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | outmantissa2_reg[0]      | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlediv    | exponentout29_reg[7]     | 30     | 8     | NO           | YES                | YES               | 0      | 8       | 
+|singlediv    | signout29_reg            | 30     | 1     | NO           | NO                 | YES               | 0      | 1       | 
++-------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   410|
+|3     |LUT1    |    76|
+|4     |LUT2    |   649|
+|5     |LUT3    |   153|
+|6     |LUT4    |   748|
+|7     |LUT5    |   176|
+|8     |LUT6    |   142|
+|9     |SRL16E  |   119|
+|10    |SRLC32E |    28|
+|11    |FDRE    |  4508|
+|12    |FDSE    |     2|
+|13    |IBUF    |    79|
+|14    |OBUF    |    33|
++------+--------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |  7124|
+|2     |  z1     |singleaddsub |   548|
+|3     |  z2     |singlemul    |  2956|
+|4     |  z3     |singlediv    |  3418|
+|5     |  z5     |mux32        |    32|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 805.410 ; gain = 561.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 454 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:01:00 . Memory (MB): peak = 805.410 ; gain = 192.461
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:16 . Memory (MB): peak = 805.410 ; gain = 561.328
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 489 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+163 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:23 . Memory (MB): peak = 805.410 ; gain = 574.328
+INFO: [Common 17-1381] The checkpoint 'C:/Users/meera/single_precision/single_precision.runs/synth_3/decoder.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file decoder_utilization_synth.rpt -pb decoder_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.422 . Memory (MB): peak = 805.410 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue May  1 02:06:21 2018...

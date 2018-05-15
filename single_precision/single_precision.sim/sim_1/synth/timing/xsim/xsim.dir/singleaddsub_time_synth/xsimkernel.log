@@ -1,0 +1,7 @@
+Running: xsim.dir/singleaddsub_time_synth/xsimk.exe -simmode gui -wdb singleaddsub_time_synth.wdb -simrunnum 0 -socket 51086
+Design successfully loaded
+Design Loading Memory Usage: 17028 KB (Peak: 17028 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 20324 KB (Peak: 20324 KB)
+Simulation CPU Usage: 358 ms

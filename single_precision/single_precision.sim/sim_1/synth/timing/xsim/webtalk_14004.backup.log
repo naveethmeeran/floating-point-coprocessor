@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sun Apr 15 15:45:34 2018
+# Process ID: 14004
+# Current directory: C:/Users/meera/single_precision/single_precision.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/meera/single_precision/single_precision.sim/sim_1/synth/timing/xsim/xsim.dir/singlediv_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/meera/single_precision/single_precision.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: C:/Users/meera/single_precision/single_precision.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/meera/single_precision/single_precision.sim/sim_1/synth/timing/xsim/xsim.dir/singlediv_time_synth/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 52.297 ; gain = 0.957
+INFO: [Common 17-206] Exiting Webtalk at Sun Apr 15 15:45:43 2018...

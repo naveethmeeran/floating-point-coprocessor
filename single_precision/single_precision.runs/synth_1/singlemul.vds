@@ -1,0 +1,491 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Mar 19 15:28:02 2018
+# Process ID: 7496
+# Current directory: C:/Users/meera/single_precision/single_precision.runs/synth_1
+# Command line: vivado.exe -log singlemul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source singlemul.tcl
+# Log file: C:/Users/meera/single_precision/single_precision.runs/synth_1/singlemul.vds
+# Journal file: C:/Users/meera/single_precision/single_precision.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source singlemul.tcl -notrace
+Command: synth_design -top singlemul -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4960 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 345.051 ; gain = 101.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'singlemul' [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlemul.v:23]
+INFO: [Synth 8-256] done synthesizing module 'singlemul' (1#1) [C:/Users/meera/single_precision/single_precision.srcs/sources_1/new/singlemul.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 396.727 ; gain = 152.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 396.727 ; gain = 152.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 396.727 ; gain = 152.680
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 405.457 ; gain = 161.410
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 7     
+	   3 Input     13 Bit       Adders := 12    
+	   2 Input     12 Bit       Adders := 12    
+	   3 Input     12 Bit       Adders := 9     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               39 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 8     
+	               27 Bit    Registers := 12    
+	               25 Bit    Registers := 24    
+	               24 Bit    Registers := 48    
+	               23 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 7     
+	               12 Bit    Registers := 12    
+	                8 Bit    Registers := 12    
+	                1 Bit    Registers := 51    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module singlemul 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 7     
+	   3 Input     13 Bit       Adders := 12    
+	   2 Input     12 Bit       Adders := 12    
+	   3 Input     12 Bit       Adders := 9     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               39 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               31 Bit    Registers := 8     
+	               27 Bit    Registers := 12    
+	               25 Bit    Registers := 24    
+	               24 Bit    Registers := 48    
+	               23 Bit    Registers := 2     
+	               16 Bit    Registers := 4     
+	               14 Bit    Registers := 7     
+	               12 Bit    Registers := 12    
+	                8 Bit    Registers := 12    
+	                1 Bit    Registers := 51    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     31 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p1_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p2_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p3_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p4_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p5_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p6_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p7_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p8_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p9_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p10_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p11_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p12_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p13_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p14_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p15_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p16_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p17_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p18_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p19_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p20_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p21_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p22_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p23_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s112a_reg_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\p24_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s112_reg_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s112_reg_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s112_reg1_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s112_reg1_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s26_reg_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\s26_reg1_reg[26] )
+WARNING: [Synth 8-3332] Sequential element (p1_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p1_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p1_reg1_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p2_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg1_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s11_reg1_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p3_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p4_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21a_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg1_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg1_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg1_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s21_reg1_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p5_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p6_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p7_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p8_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s31_reg1_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p9_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p10_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p11_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p12_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p13_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p14_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p15_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (p16_reg1_reg[23]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41a_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[12]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[11]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[10]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[9]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[8]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s32_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[15]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[14]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[13]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[12]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[11]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[10]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[9]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[8]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[6]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[5]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[4]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[3]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[2]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[1]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg_reg[0]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[15]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[14]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[13]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[12]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[11]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[10]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[9]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[8]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[7]) is unused and will be removed from module singlemul.
+WARNING: [Synth 8-3332] Sequential element (s41_reg1_reg[6]) is unused and will be removed from module singlemul.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 557.707 ; gain = 313.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 557.707 ; gain = 313.660
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                 | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|singlemul   | invalid_reg11_reg        | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | zero_reg11_reg           | 12     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | s22_reg_reg[1]           | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul   | s22_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | s23_reg1_reg[1]          | 5      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul   | s23_reg1_reg[0]          | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | s24_reg_reg[1]           | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul   | s24_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | s112_reg1_reg[22]        | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|singlemul   | s26_reg_reg[1]           | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul   | s26_reg_reg[0]           | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | s42_reg_reg[14]          | 4      | 11    | NO           | YES                | YES               | 11     | 0       | 
+|singlemul   | s42_reg_reg[3]           | 6      | 2     | NO           | YES                | YES               | 2      | 0       | 
+|singlemul   | s42_reg_reg[1]           | 8      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|singlemul   | s42_reg_reg[0]           | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | s42_reg1_reg[30]         | 4      | 12    | NO           | YES                | YES               | 12     | 0       | 
+|singlemul   | s42_reg1_reg[18]         | 5      | 4     | NO           | YES                | YES               | 4      | 0       | 
+|singlemul   | outexponent_reg11_reg[7] | 12     | 8     | NO           | NO                 | YES               | 8      | 0       | 
+|singlemul   | out_reg[31]              | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|singlemul   | overflow1_reg            | 13     | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+--------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   160|
+|3     |LUT1   |    25|
+|4     |LUT2   |   506|
+|5     |LUT3   |    24|
+|6     |LUT4   |     4|
+|7     |LUT5   |     3|
+|8     |LUT6   |    18|
+|9     |SRL16E |    61|
+|10    |FDRE   |  1950|
+|11    |IBUF   |    65|
+|12    |OBUF   |    35|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2852|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 187 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 561.586 ; gain = 317.539
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 225 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'singlemul' is not ideal for floorplanning, since the cellview 'singlemul' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 662.277 ; gain = 431.180
+INFO: [Common 17-1381] The checkpoint 'C:/Users/meera/single_precision/single_precision.runs/synth_1/singlemul.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file singlemul_utilization_synth.rpt -pb singlemul_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 662.277 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 19 15:28:31 2018...

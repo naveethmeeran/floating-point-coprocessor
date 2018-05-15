@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Mar 19 15:28:02 2018
+# Process ID: 7496
+# Current directory: C:/Users/meera/single_precision/single_precision.runs/synth_1
+# Command line: vivado.exe -log singlemul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source singlemul.tcl
+# Log file: C:/Users/meera/single_precision/single_precision.runs/synth_1/singlemul.vds
+# Journal file: C:/Users/meera/single_precision/single_precision.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source singlemul.tcl -notrace

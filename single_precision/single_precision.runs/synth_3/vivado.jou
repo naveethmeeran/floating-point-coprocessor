@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Tue May  1 02:04:36 2018
+# Process ID: 14604
+# Current directory: C:/Users/meera/single_precision/single_precision.runs/synth_3
+# Command line: vivado.exe -log decoder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source decoder.tcl
+# Log file: C:/Users/meera/single_precision/single_precision.runs/synth_3/decoder.vds
+# Journal file: C:/Users/meera/single_precision/single_precision.runs/synth_3\vivado.jou
+#-----------------------------------------------------------
+source decoder.tcl -notrace

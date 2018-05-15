@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Sun Apr  1 13:05:14 2018
+# Process ID: 6024
+# Current directory: C:/Users/meera/single_precision
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3056 C:\Users\meera\single_precision\single_precision.xpr
+# Log file: C:/Users/meera/single_precision/vivado.log
+# Journal file: C:/Users/meera/single_precision\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/meera/single_precision/single_precision.xpr
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+reset_run synth_2
+launch_runs synth_2 -jobs 2
+wait_on_run synth_2
+launch_simulation -mode post-synthesis -type timing
+source singleaddsub_tb.tcl
+launch_simulation
+source singleaddsub_tb.tcl
+current_sim simulation_1
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source singleaddsub_tb.tcl
+close_sim
+close_sim
